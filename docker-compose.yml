@@ -60,6 +60,7 @@ services:
       - LICENSE_KEY=${LICENSE_KEY:-}
     volumes:
       - backend_backups:/app/backups
+      - ansible_data:/app/ansible
     depends_on:
       postgres:
         condition: service_healthy
@@ -83,6 +84,7 @@ services:
       - LICENSE_KEY=${LICENSE_KEY:-}
     volumes:
       - backend_backups:/app/backups
+      - ansible_data:/app/ansible
     depends_on:
       postgres:
         condition: service_healthy
@@ -192,4 +194,5 @@ volumes:
   postgres_data:
   redis_data:
   backend_backups:
+  ansible_data:
   guacamole_initdb:
