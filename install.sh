@@ -143,7 +143,7 @@ setup_environment() {
     echo "This is used for OAuth callbacks, email links, and API references."
     echo "Examples: https://overwatch.example.com, http://192.168.1.100"
     echo ""
-    read -p "Public URL [${default_url}]: " USER_URL
+    read -p "Public URL [${default_url}]: " USER_URL </dev/tty
     FRONTEND_URL="${USER_URL:-$default_url}"
     echo ""
 
