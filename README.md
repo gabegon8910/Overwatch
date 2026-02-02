@@ -3,8 +3,20 @@
 Agentless server management platform for monitoring, log collection, and script execution across mixed Linux and Windows environments.
 
 ![License](https://img.shields.io/badge/license-proprietary-blue)
-![Version](https://img.shields.io/badge/version-2.2.3-green)
+![Version](https://img.shields.io/badge/version-2.2.5-green)
 ![Docker](https://img.shields.io/badge/docker-compose-blue)
+
+## Changelog
+
+### v2.2.5
+- **Code splitting** — Lazy-loaded routes for faster page loads
+- **Ansible sudo password support** — Prompt-based become password for playbook execution
+- **Ansible read-only filesystem fix** — Inventory writes to mounted volume instead of container root
+- **License server security** — Session-based auth with VPN lockdown for license validation
+- **Server group assignment fix** — Groups now correctly assigned on server creation
+
+### v2.2.3
+- Initial public release
 
 ## Features
 
