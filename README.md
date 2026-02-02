@@ -28,7 +28,7 @@ Agentless server management platform for monitoring, log collection, and script 
 ## Quick Start
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gabegon8910/overwatch/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/gabegon8910/Overwatch/main/install.sh | bash
 ```
 
 The installer will:
@@ -45,8 +45,8 @@ Then open the URL shown in your browser to create your admin account.
 ```bash
 # Download files
 mkdir ~/overwatch && cd ~/overwatch
-curl -fsSL https://raw.githubusercontent.com/gabegon8910/overwatch/main/docker-compose.yml -o docker-compose.yml
-curl -fsSL https://raw.githubusercontent.com/gabegon8910/overwatch/main/.env.example -o .env
+curl -fsSL https://raw.githubusercontent.com/gabegon8910/Overwatch/main/docker-compose.yml -o docker-compose.yml
+curl -fsSL https://raw.githubusercontent.com/gabegon8910/Overwatch/main/.env.example -o .env
 
 # Edit .env — you MUST set these:
 #   SECRET_KEY        — openssl rand -hex 32
@@ -138,7 +138,7 @@ For servers where inbound SSH/WinRM is blocked, install the lightweight agent th
 In the Overwatch UI, go to **Server Detail > Agent** and click **Generate Token**. Then on the target server:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/gabegon8910/overwatch/main/agent/install.sh | bash -s -- \
+curl -fsSL https://raw.githubusercontent.com/gabegon8910/Overwatch/main/agent/install.sh | bash -s -- \
   --url https://overwatch.example.com \
   --token YOUR_AGENT_TOKEN
 ```
@@ -243,5 +243,5 @@ Proprietary. Free tier available for unlimited use. Pro features require a licen
 
 ## Support
 
-- Issues: [GitHub Issues](https://github.com/gabegon8910/overwatch/issues)
+- Issues: [GitHub Issues](https://github.com/gabegon8910/Overwatch/issues)
 - Email: support@byteforce.us

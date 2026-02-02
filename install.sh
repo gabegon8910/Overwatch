@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #
 # Overwatch Installer
-# https://github.com/gabegon8910/overwatch
+# https://github.com/gabegon8910/Overwatch
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/gabegon8910/overwatch/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/gabegon8910/Overwatch/main/install.sh | bash
 #
 # With options:
 #   curl -fsSL ... | bash -s -- --dir /opt/overwatch --version 2.2.3
@@ -25,7 +25,7 @@ NC='\033[0m'
 
 INSTALL_DIR="${INSTALL_DIR:-$HOME/overwatch}"
 OW_VERSION="${OW_VERSION:-latest}"
-REPO_URL="https://raw.githubusercontent.com/gabegon8910/overwatch/main"
+REPO_URL="https://raw.githubusercontent.com/gabegon8910/Overwatch/main"
 
 while [[ $# -gt 0 ]]; do
     case $1 in
@@ -143,7 +143,7 @@ setup_environment() {
     echo "This is used for OAuth callbacks, email links, and API references."
     echo "Examples: https://overwatch.example.com, http://192.168.1.100"
     echo ""
-    read -p "Public URL [${default_url}]: " USER_URL </dev/tty
+    read -r -p "Public URL [${default_url}]: " USER_URL < /dev/tty
     FRONTEND_URL="${USER_URL:-$default_url}"
     echo ""
 
@@ -235,7 +235,7 @@ print_success() {
     echo "  docker compose down            # Stop"
     echo "  docker compose pull && docker compose up -d   # Upgrade"
     echo ""
-    echo "Documentation: https://github.com/gabegon8910/overwatch"
+    echo "Documentation: https://github.com/gabegon8910/Overwatch"
     echo ""
 }
 

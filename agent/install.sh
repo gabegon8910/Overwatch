@@ -3,13 +3,13 @@
 # Overwatch Agent Installer
 #
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/gabegon8910/overwatch/main/agent/install.sh | bash -s -- --url https://overwatch.example.com --token YOUR_TOKEN
+#   curl -fsSL https://raw.githubusercontent.com/gabegon8910/Overwatch/main/agent/install.sh | bash -s -- --url https://overwatch.example.com --token YOUR_TOKEN
 #
 set -e
 
 INSTALL_DIR="/opt/overwatch-agent"
 SERVICE_NAME="overwatch-agent"
-AGENT_SCRIPT_URL="https://raw.githubusercontent.com/gabegon8910/overwatch/main/agent/overwatch-agent.py"
+AGENT_SCRIPT_URL="https://raw.githubusercontent.com/gabegon8910/Overwatch/main/agent/overwatch-agent.py"
 
 echo "=== Overwatch Agent Installer ==="
 echo ""

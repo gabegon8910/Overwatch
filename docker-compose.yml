@@ -1,8 +1,8 @@
 # Overwatch - Server Management Platform
-# https://github.com/gabegon8910/overwatch
+# https://github.com/gabegon8910/Overwatch
 #
 # Quick start:
-#   curl -fsSL https://raw.githubusercontent.com/gabegon8910/overwatch/main/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/gabegon8910/Overwatch/main/install.sh | bash
 #
 # Manual start:
 #   cp .env.example .env   # then edit .env
